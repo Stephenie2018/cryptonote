@@ -9,7 +9,6 @@
 
 #if defined(__cplusplus)
 #include <memory.h>
-#include <cstring>
 #include <string>
 
 #include "hash.h"
