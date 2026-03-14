@@ -120,7 +120,6 @@ struct EllipticCurveScalar {
       return rand<T>();
     }
   };
-
   /* Generate a new key pair
    */
   inline void generate_keys(PublicKey &pub, SecretKey &sec) {
