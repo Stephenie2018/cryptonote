@@ -50,7 +50,7 @@ namespace Crypto {
   }
 
   cn_context::~cn_context() {
-    munmap(data, MAP_SIZE)
+    munmap(data, MAP_SIZE);
   }
 
 #endif
