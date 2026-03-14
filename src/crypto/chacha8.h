@@ -1,3 +1,4 @@
+
 #pragma once
 
 #include <stdint.h>
@@ -8,6 +9,7 @@
 
 #if defined(__cplusplus)
 #include <memory.h>
+#include <cstring>
 #include <string>
 
 #include "hash.h"
@@ -44,9 +46,8 @@ namespace Crypto {
   inline void generate_chacha8_key(Crypto::cn_context &context, const std::string& password, chacha8_key& key) {
     static_assert(sizeof(chacha8_key) <= sizeof(Hash), "Size of hash must be at least that of chacha8_key");
     Hash pwd_hash;
-    cn_slow_hash(context, password.data(), password.size(), pwd_hash);
-    memcpy(&key, &pwd_hash, sizeof(key));
-    memset(&pwd_hash, 0, sizeof(pwd_hash));
+   std::memcpy(static_cast<void*>(&key), static_cast<const void*>(&pwd_hash), sizeof(key));
+   std::memset(static_cast<void*>(&pwd_hash), 0, sizeof(pwd_hash));
   }
 }
 
