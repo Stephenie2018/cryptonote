@@ -50,9 +50,7 @@ namespace Crypto {
   }
 
   cn_context::~cn_context() {
-    if (munmap(data, MAP_SIZE) != 0) {
-      throw bad_alloc();
-    }
+    munmap(data, MAP_SIZE)
   }
 
 #endif
