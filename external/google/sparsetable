@@ -54,7 +54,7 @@
 
 #ifndef _SPARSETABLE_H_
 #define _SPARSETABLE_H_
-
+#include <string.h>
 #include <google/sparsehash/sparseconfig.h>
 #include <stdlib.h>             // for malloc/free
 #include <stdio.h>              // to read/write tables
