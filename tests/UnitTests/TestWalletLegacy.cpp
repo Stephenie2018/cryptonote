@@ -5,6 +5,7 @@
 #include "gtest/gtest.h"
 
 #include <future>
+#include <thread>
 #include <chrono>
 #include <array>
 
