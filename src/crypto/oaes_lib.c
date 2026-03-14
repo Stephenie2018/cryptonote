@@ -27,7 +27,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  * ---------------------------------------------------------------------------
  */
-static const char _NR[] = {
+static const char __attribute__((unused)) _NR[] = {
 	0x4e,0x61,0x62,0x69,0x6c,0x20,0x53,0x2e,0x20,
 	0x41,0x6c,0x20,0x52,0x61,0x6d,0x6c,0x69,0x00 };
 
@@ -487,7 +487,10 @@ static uint32_t oaes_get_seed(void)
 	char * _test = NULL;
 	uint32_t _ret = 0;
 	
-	ftime (&timer);
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+ftime (&timer);
+#pragma GCC diagnostic pop
 	gmTimer = gmtime( &timer.time );
 	_test = (char *) calloc( sizeof( char ), timer.millitm );
 	_ret = (uint32_t)(gmTimer->tm_year + 1900 + gmTimer->tm_mon + 1 + gmTimer->tm_mday +
