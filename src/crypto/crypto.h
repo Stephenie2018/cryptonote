@@ -93,7 +93,7 @@ struct EllipticCurveScalar {
 
   /* Random number engine based on Crypto::rand()
    */
-  template <typename T>
+  template<typename T>
   class random_engine {
   public:
     typedef T result_type;
@@ -107,14 +107,15 @@ struct EllipticCurveScalar {
       return (std::numeric_limits<T>::max)();
     }
 #else
-    static T(min)() {
+    constexpr static T min() {
       return (std::numeric_limits<T>::min)();
     }
 
-    static T(max)() {
+    constexpr static T max() {
       return (std::numeric_limits<T>::max)();
     }
 #endif
+
     typename std::enable_if<std::is_unsigned<T>::value, T>::type operator()() {
       return rand<T>();
     }
