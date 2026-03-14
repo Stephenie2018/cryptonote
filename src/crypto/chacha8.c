@@ -3,7 +3,7 @@ chacha-merged.c version 20080118
 D. J. Bernstein
 Public domain.
 */
-
+#include <cstring>
 #include <memory.h>
 #include <stdio.h>
 #include <sys/param.h>
