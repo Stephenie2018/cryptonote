@@ -41,6 +41,7 @@
 using namespace Common;
 using namespace Logging;
 using namespace CryptoNote;
+using namespace boost::placeholders;
 
 namespace {
 
