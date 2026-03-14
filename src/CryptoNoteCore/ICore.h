@@ -7,6 +7,8 @@
 #include <cstdint>
 #include <list>
 #include <utility>
+#include <memory>
+
 #include <vector>
 #include <system_error>
 
