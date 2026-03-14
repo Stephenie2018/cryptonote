@@ -7,6 +7,7 @@
 #include <cstdint>
 #include <functional>
 #include <system_error>
+#include <memory>
 #include <vector>
 
 #include "crypto/crypto.h"
