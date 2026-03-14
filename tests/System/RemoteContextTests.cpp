@@ -9,6 +9,8 @@
 #include <System/InterruptedException.h>
 #include <System/Timer.h>
 #include <gtest/gtest.h>
+#include <thread>
+#include <chrono>
 
 using namespace System;
 
