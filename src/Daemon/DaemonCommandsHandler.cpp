@@ -10,6 +10,7 @@
 #include "CryptoNoteProtocol/CryptoNoteProtocolHandler.h"
 #include "Serialization/SerializationTools.h"
 #include "version.h"
+using namespace boost::placeholders;
 
 namespace {
   template <typename T>
