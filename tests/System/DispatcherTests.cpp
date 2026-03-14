@@ -8,6 +8,8 @@
 #include <System/Event.h>
 #include <System/Timer.h>
 #include <gtest/gtest.h>
+#include <thread>
+#include <chrono>
 
 using namespace System;
 
