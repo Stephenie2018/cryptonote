@@ -19,7 +19,7 @@ This repository is organized into specific branches based on your goals:
 
 ## 🗺️ Roadmap & Platform Support
 Development is structured in stages to ensure stability:
-1.  **Linux (Debian-based)**: Current focus. The project is primarily developed and tested on Debian 12.
+1.  **Linux (Debian-based)**: Current focus. The project is primarily developed and tested on **Debian 12**. Other Debian-based systems such as **Ubuntu** and **Linux Mint** are also fully supported without any modifications.
 2.  **Cross-platform Compilation**: Planned expansion to ensure broader Linux compatibility.
 3.  **Windows**: Native Windows support is planned for a future update.
 
@@ -27,16 +27,28 @@ Development is structured in stages to ensure stability:
 > **macOS Support:** I am currently unable to develop or test on macOS. Contributions or help from developers with Mac hardware are very welcome to help bring CryptoNoteStarter to the Apple ecosystem!
 
 ## 🚀 Getting Started
-This fork aims to be as plug-and-play as possible. Whether you are learning about Ring Signatures or building a private network for educational research, this codebase is designed to get you up and running without the headache of legacy compiler errors.
+This fork aims to be as plug-and-play as possible. Whether you are learning about Ring Signatures or building a private network for educational research, this codebase is designed to get you up and running.
 
-### Prerequisites
-To build this project, you will generally need:
+### Prerequisites & Installation
+To build this project, you will need the following dependencies:
 * GCC (supporting C++17)
 * CMake (3.10 or higher)
 * Boost Libraries
 * OpenSSL
+* **Recommended:** Visual Studio Code (Microsoft) is highly recommended as a code editor for navigating and modifying the source files.
 
----
+#### Option 1: Install via sudo (Ubuntu, Mint, or Debian with sudo)
+```bash
+sudo apt update
+sudo apt install build-essential python3-dev devscripts libboost-all-dev libssl-dev cmake git
+```
+#### Option 2: Install via su (Standard Debian)
+```bash
+su -
+apt update
+apt install build-essential python3-dev devscripts libboost-all-dev libssl-dev cmake git
+exit
+```
 
 > **Note:** This repository is maintained for educational and research purposes. While it is functional, always ensure you follow modern security best practices if you intend to deploy a network.
 
