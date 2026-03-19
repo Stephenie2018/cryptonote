@@ -37,19 +37,6 @@ To build this project, you will need the following dependencies:
 * OpenSSL
 * **Recommended:** Visual Studio Code (Microsoft) is highly recommended as a code editor for navigating and modifying the source files.
 
-#### Option 1: Install via sudo (Ubuntu, Mint, or Debian with sudo)
-```bash
-sudo apt update
-sudo apt install build-essential python3-dev devscripts libboost-all-dev libssl-dev cmake git
-```
-#### Option 2: Install via su (Standard Debian)
-```bash
-su -
-apt update
-apt install build-essential python3-dev devscripts libboost-all-dev libssl-dev cmake git
-exit
-```
-
 > **Note:** This repository is maintained for educational and research purposes. While it is functional, always ensure you follow modern security best practices if you intend to deploy a network.
 
 ### First step. Give a name to your coin
@@ -194,7 +181,7 @@ const size_t CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE = 20000;
 
 ### Fifth step. Address prefix
 
-You may choose a letter (in some cases several letters) all the coin's public addresses will start with. It is defined by `CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX` constant. Since the rules for address prefixes are nontrivial you may use the [prefix generator tool](https://cryptonotestarter.org/tools.html).
+You may choose a letter (in some cases several letters) all the coin's public addresses will start with. It is defined by `CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX` constant.
 
 Example:
 ```
@@ -244,10 +231,6 @@ Recompile everything again. Your coin code is ready now. Make an announcement fo
 ### On *nix
 
 
-You may download them from:
-
-
-
 To build, change to a directory where this file is located, and run `make`. The resulting executables can be found in `build/release/src`.
 
 **Advanced options:**
@@ -257,19 +240,6 @@ To build, change to a directory where this file is located, and run `make`. The 
 * Test suite: run `make test-release` to run tests in addition to building. Running `make test-debug` will do the same to the debug version.
 * Building with Clang: it may be possible to use Clang instead of GCC, but this may not work everywhere. To build, run `export CC=clang CXX=clang++` before running `make`.
 
-### On Windows
-Dependencies: MSVC 2013 or later, CMake 2.8.6 or later, and Boost 1.55. You may download them from:
-
-* http://www.microsoft.com/
-* http://www.cmake.org/
-* http://www.boost.org/
-
-To build, change to a directory where this file is located, and run theas commands: 
-```
-mkdir build
-cd build
-cmake -G "Visual Studio 12 Win64" ..
-```
 
 And then do Build.
 Good luck!
