@@ -22,11 +22,12 @@ Development is structured in stages to ensure stability:
 1.  **Linux (Debian-based)**: Current focus. The project is primarily developed and tested on **Debian 12**. Other Debian-based systems such as **Ubuntu** and **Linux Mint** are also fully supported without any modifications.
 2.  **Cross-platform Compilation**: Planned expansion to ensure broader Linux compatibility.
 3.  **Windows**: Native Windows support is planned for a future update.
+4.  **GUI QT Wallet**: soon 
 
 > [!IMPORTANT]
 > **macOS Support:** I am currently unable to develop or test on macOS. Contributions or help from developers with Mac hardware are very welcome to help bring CryptoNoteStarter to the Apple ecosystem!
 
-## 🚀 Getting Started
+## 🎓 Getting Started
 This fork aims to be as plug-and-play as possible. Whether you are learning about Ring Signatures or building a private network for educational research, this codebase is designed to get you up and running.
 
 ### Prerequisites & Installation
