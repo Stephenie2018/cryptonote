@@ -54,6 +54,10 @@ To build this project, you will need the following dependencies:
 > [!IMPORTANT]
 > ### ℹ️ **Original Documentation**
 > **Below this line is a copy 📋 and paste 📥 from the original CryptoNoteStarter README.md**
+>---
+
+
+
 
 ### First step. Give a name to your coin
 
