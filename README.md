@@ -38,9 +38,18 @@ To build this project, you will need the following dependencies:
 * OpenSSL
 * **Recommended:** Visual Studio Code (Microsoft) is highly recommended as a code editor for navigating and modifying the source files.
 
-> **Note:** ## 🧭 Choose Your Path
+---
+> **START:**
+> ## 🧭 Choose Your Path
 > To maintain a clear overview, we have split the documentation based on your level of experience.
-> 
+>
+> ### 🎓 For the Less Experienced Developer (or limited crypto knowledge)
+> Start with the step-by-step documentation, featuring clear instructions and detailed explanations.
+> 👉 **[Start here: Step-by-step Guide](https://github.com/Stephenie2018/cryptonote/tree/CryptoNoteStarter/docs/1_GettingStarted.md)**
+>
+> ### ⚡ For the Experienced Developer
+> Are you already familiar with Web3 tooling and cryptocurrency development? Then proceed with this document below.
+---
 
 ### First step. Give a name to your coin
 
