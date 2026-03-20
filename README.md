@@ -38,7 +38,9 @@ To build this project, you will need the following dependencies:
 * OpenSSL
 * **Recommended:** Visual Studio Code (Microsoft) is highly recommended as a code editor for navigating and modifying the source files.
 
-> **Note:** This repository is maintained for educational and research purposes. While it is functional, always ensure you follow modern security best practices if you intend to deploy a network.
+> **Note:** ## 🧭 Choose Your Path
+> To maintain a clear overview, we have split the documentation based on your level of experience.
+> 
 
 ### First step. Give a name to your coin
 
@@ -241,6 +243,7 @@ To build, change to a directory where this file is located, and run `make`. The 
 * Test suite: run `make test-release` to run tests in addition to building. Running `make test-debug` will do the same to the debug version.
 * Building with Clang: it may be possible to use Clang instead of GCC, but this may not work everywhere. To build, run `export CC=clang CXX=clang++` before running `make`.
 
+> **Note:** This repository is maintained for educational and research purposes. While it is functional, always ensure you follow modern security best practices if you intend to deploy a network.
 
 And then do Build.
 Good luck!
