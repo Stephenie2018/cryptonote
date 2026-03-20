@@ -1,6 +1,6 @@
 # CryptoNoteStarter (Modernized Fork)
 This fork aims to be as plug-and-play as possible. Whether you are learning about Ring Signatures or building a private network for educational research, this codebase is designed to get you up and running.
->---
+----
 
 ### 📦Prerequisites & Installation
 To build this project, you will need the following dependencies:
@@ -29,8 +29,31 @@ To view and edit the project files, you need a code editor. You are free to use 
 * **Recommendation:** Visual Studio Code (Free, Open Source, and powerful).
 * **Download:** [Download VS Code here](https://code.visualstudio.com/)
 
+
+
 **Installation Instructions:**
 1.  Download the installer for your operating system (Windows, macOS, or Linux).
 2.  Run the installer and follow the default setup steps.
 3.  **Pro Tip:** Once installed, open VS Code and go to the "Extensions" tab (icon with four squares on the left). Search for and install the **"Solidity"** extension by Juan Blanco. This will help you read the smart contract code much more easily!
 
+### 📥 Downloading the Project (Cloning)
+
+Once you have Git installed, you can download the entire project directly to your computer using the terminal. This is called "cloning".
+
+1. **Open your Terminal** (Command Prompt on Windows, or Terminal on macOS/Linux).
+2. **Navigate to the folder** where you want to save the project (for example, your Documents folder):
+   ```bash
+   cd Documents
+   ```
+3. **Copy and paste the following command** to download the repository:
+   ```bash
+   git clone https://github.com/Stephenie2018/cryptonote.git
+   ```
+4. **Enter the project folder:**
+   ```bash
+   cd cryptonote
+   ```
+   ----
+
+   
+   
