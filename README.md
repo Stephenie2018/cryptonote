@@ -51,7 +51,9 @@ To build this project, you will need the following dependencies:
 > Are you already familiar with Web3 tooling and cryptocurrency development? Then proceed with this document below.
 ---
 
- **ℹ️ Below this line is a copy 📋 and paste 📥 from the original CryptoNoteStarter README.md**
+> [!IMPORTANT]
+> ### ℹ️ **Original Documentation**
+> **Below this line is a copy 📋 and paste 📥 from the original CryptoNoteStarter README.md**
 
 ### First step. Give a name to your coin
 
